@@ -46,7 +46,12 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <
+    <EditText
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_sort"/>
 
    <androidx.recyclerview.widget.RecyclerView
        android:layout_width="match_parent"
