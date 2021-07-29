@@ -46,14 +46,42 @@
 
     </com.google.android.material.tabs.TabLayout>
 
-    <EditText
-        android:imeOptions="actionSearch"
-        android:inputType="text"
-        android:layout_width="wrap_content"
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_sort"/>
+        android:elevation="10dp">
 
-   <androidx.recyclerview.widget.RecyclerView
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#666666"
+            android:gravity="center|right"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="39dp"
+                android:layout_height="35dp"
+                android:background="#f6f6fb"
+                android:gravity="center|right">
+
+                <EditText
+                    android:id="@+id/searchOption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:drawableRight="@drawable/search"
+                    android:ems="10"
+                    android:gravity="center"></EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:id="@+id/list"/>
