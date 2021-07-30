@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    tools:context="com.sartainstudios.contacts.AboutContacts">
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
 
     <item
-        android:id="@+id/action_add_contact"
-        android:icon="@drawable/notification"
-        app:showAsAction="always"
-        android:title="Notification" />
-
+        android:id="@+id/notification" android:icon="@drawable/notification" app:showAsAction="always"   android:title="Notification"/>
     <item
-        android:id="@+id/action_my_contacts"
-        android:icon="@drawable/profile"
-        android:title="Profile"
-        app:showAsAction="ifRoom" />
-
+        android:id="@+id/profile" android:icon="@drawable/profile" app:showAsAction="always" android:title="Profile"/>
 
 </menu>

@@ -14,6 +14,11 @@
         android:orientation="vertical">
 
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" />
+
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view"
             android:layout_width="match_parent"
@@ -48,7 +53,7 @@
                         android:textSize="14sp" />
 
                     <TextView
-                        android:id="@+id/textView6"
+                        android:id="@+id/textPrefrence"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="150dp"
@@ -115,7 +120,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -123,7 +129,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="19dp"
-                            android:layout_marginTop="7dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Due Date"
                             android:textColor="#666666"
@@ -133,10 +138,11 @@
                             android:id="@+id/tvDueDate"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:layout_marginStart="179dp"
-                            android:layout_marginTop="7dp"
                             android:layout_marginEnd="19dp"
                             android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
                             android:text="Jan 18, 2020"
                             android:textColor="#666666"
                             android:textSize="11sp" />
@@ -144,7 +150,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -152,7 +159,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="19dp"
-                            android:layout_marginTop="7dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Last Modified"
                             android:textColor="#666666"
@@ -162,10 +168,11 @@
                             android:id="@+id/tvLastModified"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:layout_marginStart="99dp"
-                            android:layout_marginTop="7dp"
                             android:layout_marginEnd="19dp"
                             android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
                             android:text="Jan 18, 2020, 08:30 PM"
                             android:textColor="#666666"
                             android:textSize="11sp" />
@@ -173,7 +180,8 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="7dp"
                         android:orientation="horizontal">
 
                         <TextView
@@ -181,7 +189,6 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginStart="19dp"
-                            android:layout_marginTop="7dp"
                             android:fontFamily="@font/montserrat_medium"
                             android:text="Created On"
                             android:textColor="#666666"
@@ -191,10 +198,11 @@
                             android:id="@+id/tvCreatedOn"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_gravity="center"
                             android:layout_marginStart="112dp"
-                            android:layout_marginTop="7dp"
                             android:layout_marginEnd="19dp"
                             android:fontFamily="@font/montserrat_medium"
+                            android:gravity="center"
                             android:text="Dec 18, 2019, 08:30 PM"
                             android:textColor="#666666"
                             android:textSize="11sp" />

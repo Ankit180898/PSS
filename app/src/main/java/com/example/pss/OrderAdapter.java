@@ -14,7 +14,8 @@ import java.util.ArrayList;
 public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> {
     private ArrayList<Orders> order=new ArrayList<>();
 
-    public OrderAdapter(Context context, ArrayList<Orders> order) {
+
+    public OrderAdapter(ArrayList<Orders> order) {
         this.order = order;
     }
 
@@ -33,6 +34,8 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> {
         holder.dueDate.setText(order.get(position).getDueDate());
         holder.lastModified.setText(order.get(position).getLastModified());
         holder.createdOn.setText(order.get(position).getCreatedOn());
+
+
     }
 
     @Override
@@ -41,7 +44,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> {
     }
 
     public class Holder extends RecyclerView.ViewHolder {
-        TextView name,address,dueDate,lastModified,createdOn;
+        TextView name,address,dueDate,lastModified,createdOn,workOrder,txtprefrence;
         public Holder(View itemView) {
             super(itemView);
             name=itemView.findViewById(R.id.tvName);
@@ -51,4 +54,6 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.Holder> {
             createdOn=itemView.findViewById(R.id.tvCreatedOn);
         }
     }
+
+
 }
